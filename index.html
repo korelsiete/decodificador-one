@@ -15,9 +15,50 @@
   </head>
   <body>
     <main>
-      <header></header>
-      <section></section>
-      <section></section>
+      <header>
+        <nav>
+          <img src="./assets/logo-alura.png" alt="Alura Logo" class="logo" />
+        </nav>
+      </header>
+
+      <section class="input">
+        <textarea
+          class="input__text"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <div class="input__bottom">
+          <span class="input__info"
+            ><span class="input__info--warning">ℹ︎</span> Solo letras minúsculas
+            y sin acentos</span
+          >
+          <div class="buttons">
+            <button class="button--primary">Encriptar</button>
+            <button class="button--secondary">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="output">
+        <div class="not-found-message">
+          <div class="not-found-message__image"></div>
+          <span class="not-found-message__text"
+            >Ningún mensaje fue encontrado</span
+          >
+          <span class="not-found-message__subtext"
+            >Ingresa el texto que desees encriptar o desencriptar.</span
+          >
+        </div>
+        <p class="output__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          alias asperiores, explicabo inventore earum esse, et deserunt rerum
+          quis molestias commodi veniam! Qui illum tenetur eveniet labore sit
+          beatae fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatem hic consequuntur nesciunt alias ut totam officiis nam
+          veritatis voluptas molestias! Dicta quasi earum tempore eveniet unde
+          officia fugit cupiditate enim.
+        </p>
+        <button id="copy-button" class="button--secondary">Copiar</button>
+      </section>
     </main>
   </body>
 </html>
