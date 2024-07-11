@@ -1,0 +1,21 @@
+:root {
+  --background-color: #f3f5fc;
+  --primary-color: #0a3871;
+  --secondary-color: #d8dfe8;
+  --soft-color: #495057;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+}
