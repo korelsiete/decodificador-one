@@ -11,7 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <script defer src="./index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script defer type="module" src="./index.js"></script>
   </head>
   <body>
     <main>
@@ -23,6 +27,7 @@
 
       <section class="input">
         <textarea
+          id="input-text"
           class="input__text"
           placeholder="Ingrese el texto aquí"
         ></textarea>
@@ -32,8 +37,12 @@
             y sin acentos</span
           >
           <div class="buttons">
-            <button class="button--primary">Encriptar</button>
-            <button class="button--secondary">Desencriptar</button>
+            <button id="encrypt-button" class="button--primary">
+              Encriptar
+            </button>
+            <button id="decrypt-button" class="button--secondary">
+              Desencriptar
+            </button>
           </div>
         </div>
       </section>
@@ -48,15 +57,7 @@
             >Ingresa el texto que desees encriptar o desencriptar.</span
           >
         </div>
-        <p class="output__text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          alias asperiores, explicabo inventore earum esse, et deserunt rerum
-          quis molestias commodi veniam! Qui illum tenetur eveniet labore sit
-          beatae fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatem hic consequuntur nesciunt alias ut totam officiis nam
-          veritatis voluptas molestias! Dicta quasi earum tempore eveniet unde
-          officia fugit cupiditate enim.
-        </p>
+        <p id="output-text" class="output__text"></p>
         <button id="copy-button" class="button--secondary">Copiar</button>
       </section>
     </main>
